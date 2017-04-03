@@ -1,0 +1,3 @@
+package com.sd.observer.weather;
+
+public interface Subject
