@@ -1,0 +1,15 @@
+package headfirst.factory.pizzafm;
+
+public class NYPizzaStore extends PizzaStore {
+ Pizza createPizza(String item) {
+   Pizza Pizza=null;
+  if (item.equals("cheese")) {
+   Pizza= new NYStyleCheesePizza();
+  } else if (item.equals("veggie")) {
+   Pizza= new NYStyleVeggiePizza();
+  }
+   else if (item.equals("pepperoni")) {
+   Pizza= new NYStylePepperoniPizza();
+   } //else return null;
+ } 
+}
